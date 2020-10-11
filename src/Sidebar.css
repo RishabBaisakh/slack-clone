@@ -5,6 +5,9 @@
   max-width: 260px;
 }
 
+.sidebar > hr {
+}
+
 .sidebar_header {
   display: flex;
   border-bottom: 1px solid #49274b;
