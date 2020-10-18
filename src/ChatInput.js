@@ -11,6 +11,7 @@ function ChatInput({ channelName, channelId }) {
   const sendMessage = (e) => {
     e.preventDefault();
 
+    console.log("ChatInput | What is the channel id? ", channelId);
     if (channelId) {
       db.collection("rooms").doc(channelId).collection("messages").add({
         message: input,
