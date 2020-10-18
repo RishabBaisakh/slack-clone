@@ -15,6 +15,8 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
 import db from "./firebase";
 import { useStateValue } from "./StateProvider";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import SidebarOptionHeader from "./SidebarOptionHeader";
 
 function Sidebar() {
   const [channels, setChannels] = useState([]);
@@ -36,7 +38,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar_header">
         <div className="sidebar_info">
-          <h2>Clever Programmer</h2>
+          <h2>Hopelessly Interesting</h2>
 
           <h3>
             <FiberManualRecordIcon />
@@ -47,20 +49,22 @@ function Sidebar() {
       </div>
       <SidebarOption Icon={InsertCommentIcon} title="Threads" />
       <SidebarOption Icon={InboxIcon} title="Mentions & reactions" />
+      <SidebarOption Icon={MoreVertIcon} title="More" />
       <SidebarOption Icon={DraftsIcon} title="Saved items" />
       <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser" />
       <SidebarOption Icon={PeopleAltIcon} title="People & user group" />
       <SidebarOption Icon={AppsIcon} title="Apps" />
       <SidebarOption Icon={FileCopyIcon} title="File browser" />
-      <SidebarOption Icon={ExpandLessIcon} title="Show less" />
-
-      <hr />
-      <SidebarOption Icon={ExpandMoreIcon} title="Show more" />
-      <hr />
+      {/* <SidebarOption Icon={ExpandLessIcon} title="Show less" /> */}
+      {/* <SidebarOption Icon={ExpandMoreIcon} title="Show more" /> */}
+      {/* Sidebar heading -> Channels */}
+      <SidebarOptionHeader name="Channels" />
       <SidebarOption Icon={AddIcon} addChannelOption title="Add channel" />
       {channels.map((channel) => (
         <SidebarOption title={channel.name} id={channel.id} />
       ))}
+      {/* Sidebar heading -> Direct Messages */}
+      {/* Sidebar heading -> Apps */}
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.sidebarOptionHeader {
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+  padding-left: 2px;
+}
+
+.sidebarOptionHeader:hover {
+  background-color: #340e36;
+}
+
+.sidebarOptionHeader_icon {
+  padding: 10px;
+  font-size: 18px !important;
+}

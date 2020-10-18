@@ -9,8 +9,6 @@ import { useStateValue } from "./StateProvider";
 function Header() {
   const [{ user }] = useStateValue();
 
-  console.log("Header | user => ", user);
-
   return (
     <div className="header">
       <div className="header_left">
