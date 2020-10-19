@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Chat from "./Chat";
 import Login from "./Login";
 import { useStateValue } from "./StateProvider";
+import Welcome from "./Welcome";
 
 function App() {
   // const [user, setUser] = useState(null);
@@ -28,7 +29,7 @@ function App() {
                   <Chat />
                 </Route>
                 <Route path="/">
-                  <h1>Welcome</h1>
+                  <Welcome />
                 </Route>
               </Switch>
             </div>

@@ -1,0 +1,16 @@
+.welcome {
+  flex: 0.7;
+  flex-grow: 1;
+}
+
+.welcome_header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.welcome_header > h3 {
+  font-size: 30px;
+  font-weight: 100;
+}
