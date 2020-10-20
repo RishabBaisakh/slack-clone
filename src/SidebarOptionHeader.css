@@ -2,14 +2,33 @@
   display: flex;
   align-items: center;
   opacity: 0.9;
+  font-size: 12px;
   padding-left: 2px;
 }
 
-.sidebarOptionHeader:hover {
-  background-color: #340e36;
+.sidebarOptionHeader > h3 {
+  flex: 0.9;
+  font-weight: 400;
 }
 
 .sidebarOptionHeader_icon {
-  padding: 10px;
+  margin: 5px;
   font-size: 18px !important;
+  border-radius: 2px;
+}
+
+.sidebarOptionHeader_icon:hover {
+  background-color: purple;
+}
+
+.sidebarOptionHeader_addIcon {
+  float: right;
+  margin: 5px;
+  padding: 2px;
+  font-size: 18px !important;
+  border-radius: 3px;
+}
+
+.sidebarOptionHeader_addIcon:hover {
+  background-color: purple;
 }

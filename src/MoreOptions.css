@@ -1,0 +1,22 @@
+.moreOptions {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 2px;
+  opacity: 0.9;
+  color: lightgray;
+}
+
+.moreOptions:hover {
+  opacity: 1;
+  color: white;
+}
+
+.moreOptions > h3 {
+  font-weight: 400;
+}
+
+.moreOptions_icon {
+  padding: 10px;
+  font-size: 18px !important;
+}

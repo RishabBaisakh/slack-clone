@@ -20,8 +20,7 @@ function Header() {
         <AccessTimeIcon />
       </div>
       <div className="header_search">
-        <SearchIcon />
-        <input placeholder="Search bar" />
+        <p>Search workspace </p>
       </div>
       <div className="header_right">
         <HelpOutline />
